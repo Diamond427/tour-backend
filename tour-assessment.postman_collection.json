@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "badaa62b-0a50-4870-8913-29ad195ddfc9",
+		"name": "tour-assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32919454"
+	},
+	"item": [
+		{
+			"name": "get tour",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/tour",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"tour"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add tour",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Title 1\",\r\n    \"description\": \"Best tour plan for a couple (starts every Monday)\",\r\n    \"duration\": 3,\r\n    \"start\": [{ \"weekday\": 1 }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/tour",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"tour"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_URL",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
